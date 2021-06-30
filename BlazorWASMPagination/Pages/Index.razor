@@ -1,0 +1,14 @@
+﻿@page "/"
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+
+Current Page Index: @State.PageIndex
+
+@code{ 
+    [CascadingParameter]
+    PageIndexStateProvider State { get; set; }
+}
